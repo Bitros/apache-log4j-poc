@@ -8,6 +8,8 @@ Apache Log4j 远程代码执行复现 JDK11
 `System.setProperty("com.sun.jndi.rmi.object.trustURLCodebase", "true");`
 `System.setProperty("com.sun.jndi.ldap.object.trustURLCodebase", "true");`
 
+> 编译后 cd target/classes && python -m http.server 8000 --bind 127.0.0.1
+
 ### 修复方案：
 
 （1）修改jvm参数
